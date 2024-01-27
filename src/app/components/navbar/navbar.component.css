@@ -78,3 +78,61 @@
   padding: 12px 104px;
   border-radius: 28px;
 }
+
+@media(min-width: 1024px){
+
+  .header	{
+    padding: 0 140px;
+  }
+
+  .header .hamburger-menu, .header .nav-mobile{
+    display: none;
+  }
+
+  .header .title_links_container{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .header .title_links_container h1{
+    cursor: pointer;
+  }
+
+  .header .nav-desktop{
+    display: flex;
+    align-items: center;
+    gap: 29px;
+  }
+
+  .header .nav-desktop a,
+  .header .login-signUp-container-desktop button{
+    color: var(--grayish-violet);
+    font-size: .8rem;
+    font-weight: 700;
+    transition: .2s;
+    cursor: pointer;
+  }
+
+  .header .nav-desktop a:hover,
+  .header .login-signUp-container-desktop button:hover{
+    color: var(--very-dark-violent);
+  }
+
+  .header .login-signUp-container-desktop{
+    display: flex;
+    align-items: center;
+    gap: 37px;
+  }
+
+  .header .login-signUp-container-desktop button:last-of-type{
+    color: var(--white);
+    padding: 9px 24px;
+    border-radius: 28px;
+    background-color: var(--cyan);
+  }
+
+  .header .login-signUp-container-desktop button:last-of-type:hover{
+    opacity: .5;
+  }
+}
