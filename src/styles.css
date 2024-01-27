@@ -7,10 +7,13 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
+
 }
 
-html{
+html,body{
   background-color: var(--gray);
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 :root{
@@ -21,6 +24,17 @@ html{
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violent: hsl(260, 8%, 14%);
+  --white: #FFFFFF;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6,p{

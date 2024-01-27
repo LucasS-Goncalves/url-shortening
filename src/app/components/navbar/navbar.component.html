@@ -1,0 +1,37 @@
+<header class="header">
+  <div class="title_links_container">
+    <h1>
+      <img src="../../../assets/images/logo.svg" alt="Shortly icon">
+    </h1>
+    <nav class="nav-desktop">
+      <a>Features</a>
+      <a>Pricing</a>
+      <a>Resources</a>
+    </nav>
+  </div>
+  <button class="hamburger-menu" (click)="menuToggle()">
+    <img src="../../../assets/images/menu.svg" alt="Menu Hamburger">
+  </button>
+  <div class="login-signUp-container-desktop">
+    <button>
+      Login
+    </button>
+    <button>
+      Sign Up
+    </button>
+  </div>
+  <nav class="nav-mobile" [ngClass]="{'menuOpened': hamburgerMenuOpened}" >
+    <a>Features</a>
+    <a>Pricing</a>
+    <a>Resoucers</a>
+    <span class="h-line"></span>
+    <div class="login-signUp-container">
+      <button>
+        Login
+      </button>
+      <button>
+        Sign Up
+      </button>
+    </div>
+  </nav>
+</header>

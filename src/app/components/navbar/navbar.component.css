@@ -1,0 +1,80 @@
+.header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 24px;
+  background-color: var(--white);
+}
+
+.header .title_links_container h1{
+  width: 120px;
+  height: 33px;
+}
+
+.header .nav-desktop, .header .login-signUp-container-desktop{
+  display: none;
+}
+
+.header .hamburger-menu{
+  width: 24px;
+  height: 21px;
+}
+
+.header .nav-mobile{
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(100%);
+  top: 80%;
+  right: 0;
+  width: 327px;
+  background-color: var(--dark-violet);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 22px 4px var(--grayish-violet);
+  transition: .2s;
+  z-index: 2;
+}
+
+.header .nav-mobile.menuOpened{
+  transform: translateX(-24px);
+  visibility: visible;
+}
+
+.header .nav-mobile a{
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.header .nav-mobile span{
+  width: 279px;
+  height: 1px;
+  background-color: var(--grayish-violet);
+}
+
+.header .nav-mobile .login-signUp-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 24px;
+
+}
+
+.header .nav-mobile .login-signUp-container button{
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.header .nav-mobile .login-signUp-container button:last-of-type{
+  background-color: var(--cyan);
+  padding: 12px 104px;
+  border-radius: 28px;
+}
