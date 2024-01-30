@@ -11,14 +11,16 @@
 }
 
 html,body{
-  background-color: var(--white);
+  background-color: var(--light-gray);
   overflow-x: hidden;
   height: 100vh;
 }
 
 :root{
   --cyan: hsl(180, 66%, 49%);
+  --cyan-hover:#9AE3E3;
   --dark-violet: hsl(257, 27%, 26%);
+  --light-gray: #EFF1F7;
   --red: hsl(0, 87%, 67%);
   --gray: hsl(0, 0%, 75%);
   --grayish-violet: hsl(257, 7%, 63%);

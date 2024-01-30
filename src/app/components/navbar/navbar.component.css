@@ -133,6 +133,6 @@
   }
 
   .header .login-signUp-container-desktop button:last-of-type:hover{
-    opacity: .5;
+    background-color: var(--cyan-hover);
   }
 }
