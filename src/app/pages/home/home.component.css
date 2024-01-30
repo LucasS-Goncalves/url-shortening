@@ -60,9 +60,9 @@
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 88px;
   border-radius: 10px;
   position: relative;
+  transform: translateY(-50%);
 }
 
 .input-container input{
@@ -110,6 +110,99 @@
   border-top-right-radius: 10px;
 }
 
+.advanced-statistics{
+  width: 95%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.advanced-statistics h3{
+  color: var(--very-dark-blue);
+  font-size: 1.56rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.7px;
+}
+
+.advanced-statistics p{
+  color: var(--grayish-violet);
+  font-size: .89rem;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.109px;
+  margin-top: 16px;
+}
+
+.cards-container{
+  width: 327px;
+  margin: 0 auto;
+  margin-top: 92px;
+}
+
+.cards-container ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 92px;
+  text-align: center;
+}
+
+.cards-container ul li{
+  background-color: var(--white);
+  padding: 77px 32px 41px 32px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.cards-container ul li .icon-container{
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+  background-color: var(--dark-violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.cards-container ul li h4{
+  width: 263px;
+  color: var(--very-dark-blue);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cards-container ul li p{
+  width: 263px;
+  color: var(--grayish-violet);
+  font-size: .83rem;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.cards-container ul li:nth-child(2) .line{
+  width: 8px;
+  height: 92px;
+  background-color: var(--cyan);
+  position: absolute;
+  left: 50%;
+}
+
+.cards-container ul li:nth-child(2) .line:first-child{
+  top: 0;
+  transform: translateY(-100%) translateX(-50%);
+}
+
+.cards-container ul li:nth-child(2) .line:last-child{
+  bottom: 0;
+  transform: translateY(100%) translateX(-50%);
+}
+
 @media(min-width: 1280px){
 
   .header{
@@ -154,8 +247,6 @@
     gap: 24px;
     width: 1100px;
     max-width: initial;
-    margin-top: 0;
-    transform: translateY(-50%);
   }
 
   .input-container input{
@@ -187,4 +278,21 @@
   .input-container picture img{
     border-radius: 10px;
   }
+
+  .advanced-statistics{
+    max-width: 540px;
+    margin-top: 36px;
+  }
+
+  .advanced-statistics h3{
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  .advanced-statistics p{
+    line-height: 32px;
+    letter-spacing: 0.123px;
+    margin-top: 18px;
+  }
 }
+
