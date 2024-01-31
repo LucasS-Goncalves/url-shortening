@@ -294,5 +294,49 @@
     letter-spacing: 0.123px;
     margin-top: 18px;
   }
+
+  .cards-container{
+    width: 1100px;
+    margin-top: 92px;
+  }
+
+  .cards-container ul{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    text-align: start;
+  }
+
+  .cards-container ul li{
+    width: 350px;
+    height: 267px;
+  }
+
+  .cards-container ul li:nth-child(2){
+    transform: translateY(40px);
+  }
+
+  .cards-container ul li:nth-child(3){
+    transform: translateY(80px);
+  }
+
+  .cards-container ul li:nth-child(2) .line{
+    height: 8px;
+    width: 25px;
+    left: initial;
+  }
+
+  .cards-container ul li:nth-child(2) .line:first-child{
+    top: 110px;
+    left: 0;
+    transform: translateY(0) translateX(-100%);
+  }
+
+  .cards-container ul li:nth-child(2) .line:last-child{
+    right: 0;
+    bottom: unset;
+    top: 110px;
+    transform: translateY(0) translateX(100%);
+  }
 }
 
