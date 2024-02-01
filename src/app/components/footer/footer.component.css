@@ -1,0 +1,168 @@
+footer{
+  width: 100%;
+  margin-top: 100px;
+}
+
+footer .footer-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--dark-violet);
+  height: 300px;
+  position: relative;
+}
+
+footer .footer-1 h5{
+  color: var(--white);
+  font-size: 1.56rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -.47px;
+  z-index: 2;
+}
+
+footer .footer-1 button{
+  width: 197px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  background-color: var(--cyan);
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 500px;
+  z-index: 2;
+  transition: .2s;
+}
+
+footer .footer-1 picture{
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+footer .footer-1 picture img{
+  display: block;
+}
+
+footer .footer-2{
+  background-color: var(--very-dark-violet);
+  display: flex;
+  gap: 55px;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+footer .footer-2 .lists-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+}
+
+footer .footer-2 .lists-container .list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer-2 .lists-container .list h6{
+  color: var(--white);
+  font-size: .89rem;
+  font-weight: 700;
+  letter-spacing: -.25px;
+}
+
+footer .footer-2 .lists-container .list ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer-2 .lists-container .list ul li{
+  color: var(--grayish-violet);
+  font-size: .83rem;
+  font-weight: 500;
+  letter-spacing: -.23px;
+  transition: .2s;
+}
+
+footer .footer-2 .lists-container .social-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+footer .footer-2 .lists-container .social-media li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+footer .footer-2 .lists-container .social-media li svg path{
+  transition: .2s;
+}
+
+@media(min-width: 1280px){
+
+  footer{
+    margin-top: 230px;
+  }
+
+  footer .footer-1{
+    height: 250px;
+    gap: 30px;
+  }
+
+  footer .footer-1 h5{
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  footer .footer-1 button:hover{
+    cursor: pointer;
+    background-color: var(--cyan-hover);
+  }
+
+  footer .footer-2{
+    gap: 200px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 0 ;
+  }
+
+  footer .footer-2 .lists-container{
+    flex-direction: row;
+    text-align: start;
+    gap: 100px;
+  }
+
+  footer .footer-2 .lists-container .social-media{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  footer .footer-2 .lists-container .list ul li:hover{
+    color: var(--cyan);
+    cursor: pointer;
+  }
+
+  footer .footer-2 .lists-container .social-media li:hover{
+    cursor: pointer;
+  }
+
+  footer .footer-2 .lists-container .social-media li:hover svg path{
+    fill: var(--cyan);
+  }
+}
